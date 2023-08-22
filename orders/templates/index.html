@@ -1,0 +1,16 @@
+<h1>ORDERS</h1>
+<table border="3">
+    <thead>
+        <td>Id</td>
+        <td>Product</td>
+        <td>Price</td>
+    </thead>
+    {% for x in mymembers %}
+    <tr>
+        <td>{{ x.id }}</td>
+        <td>{{ x.product }}</td>
+        <td>{{ x.price }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
